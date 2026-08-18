@@ -1,84 +1,71 @@
-# Object Oriented Programming in Java ☕
+# Comprehensive Java Journey: Basics to Advanced ☕
 
-Welcome to the **Object Oriented Programming (OOP) in Java** repository! This project serves as a comprehensive guide, clean implementation reference, and practical code repository covering the core pillars and advanced concepts of Object-Oriented Programming using Java.
-
----
-
-## 🚀 Repository Objectives
-* **Master Pillars**: Implement Encapsulation, Inheritance, Polymorphism, and Abstraction from scratch.
-* **Clean Code**: Practice standard Java naming conventions, documentation, and design patterns.
-* **Real-World Examples**: Explore structured mini-projects demonstrating practical OOP workflows.
+Welcome to my Java learning repository! This project tracks my progress from foundational programming building blocks all the way to advanced enterprise-level Java features. It serves as a practical codebase, reference tool, and showcase of clean Java development.
 
 ---
 
-## 🏛️ Core Pillars of OOP Covered
+## 🗺️ Roadmap & Progress Tracker
 
-### 1. Encapsulation 🔒
-Wrapping data (variables) and code (methods) together as a single unit. Data hiding is achieved by making class variables `private` and exposing them through public getter and setter methods.
-* *Example directory:* `/src/encapsulation`
+### 🪴 Phase 1: Core Fundamentals (Basics)
+* [ ] **Syntax & Variables**: Data types, type casting, basic operators.
+* [ ] **Control Flow**: If/else statements, switch-case blocks, loops (`for`, `while`, `do-while`).
+* [ ] **Methods**: Definition, parameters, return types, and scope.
+* [ ] **Arrays & Strings**: Single/multi-dimensional arrays, String manipulation, and `StringBuilder`.
 
-### 2. Inheritance 🌲
-The mechanism where one class (child/subclass) acquires the properties and behaviors of another class (parent/superclass) using the `extends` keyword. Reusability at its best.
-* *Example directory:* `/src/inheritance`
+### 🏛️ Phase 2: Object-Oriented Programming (OOP)
+* [ ] **Classes & Objects**: Constructors, `this` keyword, object lifecycle.
+* [ ] **Encapsulation**: Access modifiers (`private`, `public`, `protected`), getters, and setters.
+* [ ] **Inheritance**: Subclasses, superclasses, and the `extends` keyword.
+* [ ] **Polymorphism**: Method Overloading (compile-time) and Method Overriding (runtime).
+* [ ] **Abstraction**: Abstract classes, Interfaces, and multiple inheritance alternatives.
 
-### 3. Polymorphism 🔄
-The ability of an object to take on many forms. 
-* **Compile-time (Static)**: Method Overloading (same method name, different parameters).
-* **Runtime (Dynamic)**: Method Overriding (child class provides a specific implementation of a parent method).
-* *Example directory:* `/src/polymorphism`
+### ⚙️ Phase 3: Intermediate Java Mechanics
+* [ ] **Exception Handling**: Try-catch blocks, throw/throws, custom exceptions, and `finally`.
+* [ ] **Java Collections Framework**: Lists (`ArrayList`, `LinkedList`), Sets (`HashSet`), and Maps (`HashMap`).
+* [ ] **Generics**: Generic classes, methods, and wildcards (`? extends T`).
+* [ ] **File I/O**: Reading and writing files using `FileReader`, `FileWriter`, and the `java.nio` package.
 
-### 4. Abstraction 👤
-Hiding internal implementation details and showing only essential features to the user. Achieved using `abstract classes` and `interfaces`.
-* *Example directory:* `/src/abstraction`
+### 🚀 Phase 4: Advanced Java Concepts
+* [ ] **Multithreading & Concurrency**: `Thread` class, `Runnable`, synchronization, and Executors framework.
+* [ ] **Functional Programming**: Lambda expressions, Functional Interfaces, and the **Streams API**.
+* [ ] **Modern Java Features**: Sealed classes, Records, Text Blocks, and Switch Expressions (Java 11 - 21+).
+* [ ] **Design Patterns**: Creational (Singleton, Factory), Structural, and Behavioral patterns.
 
 ---
 
-## 📁 Repository Structure
+## 📁 Repository Directory Structure
 
 ```text
-├── src/
-│   ├── encapsulation/      # Private fields, getters/setters, data hiding
-│   ├── inheritance/        # Superclasses, subclasses, method overriding
-│   ├── polymorphism/       # Overloading vs Overriding examples
-│   ├── abstraction/        # Abstract classes and Interface implementations
-│   └── projects/           # Mini-applications (e.g., Banking System, School Management)
-└── README.md               # Project documentation
+├── 01-basics/            # Variables, loops, methods, arrays
+├── 02-oop/               # Pillars of OOP (Encapsulation, Inheritance, etc.)
+├── 03-collections/       # Lists, Sets, Maps, and sorting algorithms
+├── 04-exceptions-io/     # Error handling and file operations
+├── 05-concurrency/       # Threads, locks, and parallel execution
+├── 06-streams-lambdas/   # Functional programming & Stream API
+└── README.md             # Project documentation
 ```
 
 ---
 
-## 🛠️ Requirements & Setup
+## 🛠️ Getting Started
 
 ### Prerequisites
-* **Java Development Kit (JDK)**: Version 11 or higher recommended.
-* **IDE/Text Editor**: IntelliJ IDEA, Eclipse, VS Code, or your preferred environment.
+* **Java Development Kit (JDK)**: Version 17 or higher recommended.
+* **IDE**: IntelliJ IDEA, Eclipse, or VS Code.
 
-### Getting Started Locally
-1. **Clone the repository**:
+### Setup Locally
+1. **Clone this repo**:
    ```bash
    git clone https://github.com
    ```
-2. **Navigate to the directory**:
+2. **Navigate and compile**:
    ```bash
    cd Object-Oriented-Programming-in-JAVA
-   ```
-3. **Compile and run any module** (e.g., using a terminal):
-   ```bash
-   javac src/encapsulation/*.java
-   java src.encapsulation.Main
+   javac 01-basics/HelloWorld.java
+   java 01-basics.HelloWorld
    ```
 
 ---
 
-## 🤝 Contributing
-Contributions, issue reporting, and optimization recommendations are always welcome! 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
+## 📜 License
 This project is open-source and available under the [MIT License](LICENSE).

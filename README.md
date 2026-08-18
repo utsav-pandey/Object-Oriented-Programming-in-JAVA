@@ -4,66 +4,112 @@ Welcome to my Java learning repository! This project tracks my progress from fou
 
 ---
 
-## 🗺️ Roadmap & Progress Tracker
-
-### 🪴 Phase 1: Core Fundamentals (Basics)
-* [ ] **Syntax & Variables**: Data types, type casting, basic operators.
-* [ ] **Control Flow**: If/else statements, switch-case blocks, loops (`for`, `while`, `do-while`).
-* [ ] **Methods**: Definition, parameters, return types, and scope.
-* [ ] **Arrays & Strings**: Single/multi-dimensional arrays, String manipulation, and `StringBuilder`.
-
-### 🏛️ Phase 2: Object-Oriented Programming (OOP)
-* [ ] **Classes & Objects**: Constructors, `this` keyword, object lifecycle.
-* [ ] **Encapsulation**: Access modifiers (`private`, `public`, `protected`), getters, and setters.
-* [ ] **Inheritance**: Subclasses, superclasses, and the `extends` keyword.
-* [ ] **Polymorphism**: Method Overloading (compile-time) and Method Overriding (runtime).
-* [ ] **Abstraction**: Abstract classes, Interfaces, and multiple inheritance alternatives.
-
-### ⚙️ Phase 3: Intermediate Java Mechanics
-* [ ] **Exception Handling**: Try-catch blocks, throw/throws, custom exceptions, and `finally`.
-* [ ] **Java Collections Framework**: Lists (`ArrayList`, `LinkedList`), Sets (`HashSet`), and Maps (`HashMap`).
-* [ ] **Generics**: Generic classes, methods, and wildcards (`? extends T`).
-* [ ] **File I/O**: Reading and writing files using `FileReader`, `FileWriter`, and the `java.nio` package.
-
-### 🚀 Phase 4: Advanced Java Concepts
-* [ ] **Multithreading & Concurrency**: `Thread` class, `Runnable`, synchronization, and Executors framework.
-* [ ] **Functional Programming**: Lambda expressions, Functional Interfaces, and the **Streams API**.
-* [ ] **Modern Java Features**: Sealed classes, Records, Text Blocks, and Switch Expressions (Java 11 - 21+).
-* [ ] **Design Patterns**: Creational (Singleton, Factory), Structural, and Behavioral patterns.
-
----
-
 ## 📁 Repository Directory Structure
 
 ```text
-├── 01-basics/            # Variables, loops, methods, arrays
-├── 02-oop/               # Pillars of OOP (Encapsulation, Inheritance, etc.)
-├── 03-collections/       # Lists, Sets, Maps, and sorting algorithms
-├── 04-exceptions-io/     # Error handling and file operations
-├── 05-concurrency/       # Threads, locks, and parallel execution
-├── 06-streams-lambdas/   # Functional programming & Stream API
-└── README.md             # Project documentation
+├── 01-basics/                  # Phase 1: Core Fundamentals
+│   ├── concepts/               # Conceptual code files
+│   │   ├── Variables.java      # Syntax, primitives, type casting
+│   │   ├── ControlFlow.java    # If/else, switch-case, loops
+│   │   ├── Methods.java        # Scopes, parameters, return types
+│   │   └── ArrayStrings.java   # Array manipulation, StringBuilder
+│   └── practice/               # Solved programs & assignments
+│       ├── Calculator.java
+│       ├── Fibonacci.java
+│       └── Palindrome.java
+│
+├── 02-oop/                     # Phase 2: Object-Oriented Programming
+│   ├── concepts/
+│   │   ├── Encapsulation.java  # Access modifiers, getters/setters
+│   │   ├── Inheritance.java    # extends keyword, super keyword
+│   │   ├── Polymorphism.java   # Overloading vs Overriding
+│   │   └── Abstraction.java    # Abstract classes & Interfaces
+│   └── practice/
+│       ├── LibrarySystem/      # Multi-class inheritance practice
+│       └── BankingApp/         # Encapsulation & transaction handling
+│
+├── 03-collections/             # Phase 3: Intermediate Java Mechanics
+│   ├── concepts/
+│   │   ├── ExceptionDemo.java  # Try-catch, throw, custom exceptions
+│   │   ├── ListsAndSets.java   # ArrayList, LinkedList, HashSet
+│   │   ├── MapsDemo.java       # HashMap, TreeMap key-value handling
+│   │   └── FileIODemo.java     # FileReader, FileWriter, java.nio
+│   └── practice/
+│       ├── StudentDatabase/    # CRUD operations using Collections
+│       └── LogParser/          # Exception safety and text file scanner
+│
+└── 04-advanced/                # Phase 4: Advanced Java Concepts
+    ├── concepts/
+    │   ├── MultiThreading.java # Thread class, Runnable, synchronization
+    │   ├── StreamAPI.java      # Lambdas, Filters, Maps, Reduces
+    │   └── ModernJava.java     # Records, Sealed classes, Pattern matching
+    └── practice/
+        ├── WebScraper/         # Parallel/Concurrent URL fetcher
+        └── DataTransformer/    # Processing CSV dataset using Streams
 ```
 
 ---
 
-## 🛠️ Getting Started
+## 🗺️ Roadmap, Concepts & Practice Assignments
+
+### 🪴 Phase 1: Core Fundamentals (Basics)
+* **Core Concepts to Implement:**
+  * Primitives vs. Reference data types.
+  * Explicit and implicit type-casting (`int` to `double` and vice-versa).
+  * Optimizing structural logic using `switch` expressions.
+  * Mutable strings using `StringBuilder` to save heap memory.
+* **🏋️ Practice Problems to Solve:**
+  1. `Calculator.java`: Build a terminal calculator handling addition, subtraction, multiplication, and division with invalid input filtering.
+  2. `Fibonacci.java`: Generate a Fibonacci sequence up to $N$ terms using both iteration (`for` loop) and recursion.
+  3. `Palindrome.java`: Take a string input and check if it reads the same backwards, ignoring case sensitivity and special symbols.
+
+### 🏛️ Phase 2: Object-Oriented Programming (OOP)
+* **Core Concepts to Implement:**
+  * Constructor overloading and managing instance variables using `this`.
+  * Securing sensitive fields by marking them `private` (Encapsulation).
+  * Achieving compile-time flexibility (Overloading) and runtime customization (Overriding).
+  * Designing pure architectural blueprints using pure `interface` classes.
+* **🏋️ Practice Problems to Solve:**
+  1. `BankingApp`: Create a system with an abstract `Account` class, inherited by `SavingsAccount` and `CheckingAccount`, validating balances during transactions.
+  2. `LibrarySystem`: Implement an inventory structure tracking `Book` and `Magazine` subclasses under a unified item tracking protocol.
+
+### ⚙️ Phase 3: Intermediate Java Mechanics
+* **Core Concepts to Implement:**
+  * Differentiating checked exceptions from unchecked runtime issues.
+  * When to utilize index-backed lists (`ArrayList`) vs structural maps (`HashMap`).
+  * Utilizing try-with-resources to cleanly release streaming memory blocks automatically.
+* **🏋️ Practice Problems to Solve:**
+  1. `StudentDatabase`: Build a mini management layout where users can add, delete, update, and sort student records stored within a `HashMap`.
+  2. `LogParser`: Read a mock system server `.txt` file, catch formatting flags using exception handling, and sort error patterns out into a summary file.
+
+### 🚀 Phase 4: Advanced Java Concepts
+* **Core Concepts to Implement:**
+  * Resolving multithreaded data corruption using thread `synchronization` blocks.
+  * Replacing bulky boilerplate declarations with compact data objects using `record`.
+  * Migrating legacy operational data pipelines over into functional, chainable `.stream()` syntax pipelines.
+* **🏋️ Practice Problems to Solve:**
+  1. `WebScraper`: Create an asynchronous download model executing multiple fetch threads tracking active tasks safely.
+  2. `DataTransformer`: Process a structured table of data, filter out null attributes, modify values via a lambda mapping function, and collect metrics into a new database view using the Stream API.
+
+---
+
+## 🛠️ Setup & Running
 
 ### Prerequisites
 * **Java Development Kit (JDK)**: Version 17 or higher recommended.
 * **IDE**: IntelliJ IDEA, Eclipse, or VS Code.
 
-### Setup Locally
-1. **Clone this repo**:
-   ```bash
-   git clone https://github.com
-   ```
-2. **Navigate and compile**:
-   ```bash
-   cd Object-Oriented-Programming-in-JAVA
-   javac 01-basics/HelloWorld.java
-   java 01-basics.HelloWorld
-   ```
+### Compiling and Running
+To manually check code architecture from the command line interface, step inside the root folder and run:
+```bash
+# Example for compiling and running a conceptual file
+javac 01-basics/concepts/Variables.java
+java 01-basics.concepts.Variables
+
+# Example for compiling and running a practice problem
+javac 01-basics/practice/Calculator.java
+java 01-basics.practice.Calculator
+```
 
 ---
 

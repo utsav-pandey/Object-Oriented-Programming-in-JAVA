@@ -68,6 +68,22 @@ public class Variables {
         System.out.println("City: " + city);
         System.out.println("Language: " + language);
 
-
+        /* 
+            * Constants in Java
+            * A constant is a variable whose value cannot be changed once it is assigned.
+            * We can declare a constant using the final keyword.
+            * MOSTLY WE USE CAPITAL LETTERS FOR CONSTANT VARIABLES.
+        */
+        final double PI = 3.14159; // constant variable
+        System.out.println("\nConstant Value of PI: " + PI);
+        final int MAX_ORDERS = 100; // constant variable
+        System.out.println("Maximum Orders: " + MAX_ORDERS);
+        final String COMPANY_NAME = "Tech Solutions"; // constant variable
+        System.out.println("Company Name: " + COMPANY_NAME);
+        
+        /*  
+            * Variable name cannot be the keyword in java. 
+            * For example, int, double, class, public, static, void etc.
+        */
     }
 }

@@ -7,8 +7,10 @@ Welcome to my Java learning repository! This project tracks my progress from fou
 ## 📁 Repository Directory Structure
 
 ```text
+├── Main.java                   # Introduction to java, fundamentals and history
 ├── 01-basics/                  # Phase 1: Core Fundamentals
 │   ├── concepts/               # Conceptual code files
+│   │   ├── Practical.java      # Practical tips, some conventions used in industry
 │   │   ├── Variables.java      # Syntax, primitives, type casting, operators and expressions
 │   │   ├── ControlFlow.java    # If/else, switch-case, loops
 │   │   ├── Methods.java        # Scopes, parameters, return types

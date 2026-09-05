@@ -17,8 +17,15 @@
     * We can use any integrated development environment (IDE) to write java code like eclipse, netbeans, intellij etc. but we prefer intellij or vscode.
 */
 
-public class first {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!\n");
-    }
+public class Main { 
+    // class name of main class should be same as file name.
+    // it should start with capital letter.
+    public static void main(String[] args) { 
+        System.out.println("Hello, World!\n"); 
+        //system is a built in class and out is the meathod if that class which prints the string "Hello, World!".
+    } // public emplise that this method can be accessed from anywhere, //
+      // static means we can call this method without creating an object of the class,
+      // void means it does not return any value,
+      // main is the name of the method and //
+      // String[] args is an array of strings which stores command line arguments.
 }
